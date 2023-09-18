@@ -28,6 +28,7 @@ export const ContactsPage = ({ contacts, handleAddContact }) => {
     <div>
       <section>
         <h2>Add Contact</h2>
+        {duplicateCheck && <h3>Contact Already Exists</h3>}
         <ContactForm
           currentName={currentName}
           setCurrentName={setCurrentName}
