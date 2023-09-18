@@ -21,7 +21,7 @@ export const ContactsPage = ({ contacts, handleAddContact }) => {
   };
 
   useEffect(() => {
-    setDuplicateCheck(contacts.some((contact) => contact.name !== currentName));
+    setDuplicateCheck(contacts.some((contact) => contact.name === currentName));
   }, [currentName, contacts]);
 
   return (
