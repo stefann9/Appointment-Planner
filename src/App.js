@@ -31,6 +31,7 @@ function App() {
           path={ROUTES.APPOINTMENTS}
           element={
             <AppointmentsPage
+              contacts={contacts}
               appointments={appointments}
               handleAddAppointment={handleAddAppointment}
             />
